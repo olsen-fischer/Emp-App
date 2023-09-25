@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Salary App</title>
+</head>
+<body>
+    <section class="form-sec">
+
+    <form method="POST" name="sample" class="form-contet">
+        <h2>Emplyee deatils</h2>
+        <div class="formcontent">
+    <br>
+    <div>
+        <label for="name">First Name. </label> 
+            <input type="text" name="firstname" class="inputfm one"><br>
+        </div>
+
+        <div>
+         <label for="name"> Last Name.</label> 
+        <input type="text" name="lastName" class="inputfm two"><br> 
+    </div>
+
+    <div>
+        <label for="age">Age.</label>
+            <input type="text" name="age" class="inputfm three"><br>
+    </div>
+
+    <div>
+        <label for="salary">Salary</label> 
+             <input type="text" name="salary" class="inputfm four">
+    </div>
+    
+    <h3>Adress Data</h3>
+    <div>
+        <label for="zip">Zip</label> 
+            <input type="text" name="zip" class="inputfm five "><br>
+    </div>
+
+    <div>
+        <label for="city">City</label>
+            <input type="text" name="city" class="inputfm six"><br>
+    </div>
+
+    <div>
+        <label for="country">Country</label>
+             <input type="text" name="country" class="inputfm seven"><br>
+    </div>
+
+    <div>
+        <label>P.O Box.</label>  
+            <input type="text" name="box" class="inputfm eight"><br>
+    </div>
+
+    
+    <input type="button" name="Add" value="Add data" onclick="addData()" class="btn">
+    </div> 
+    <div class="sal-container">
+
+        <hr>
+    <div class="salary">
+        <h3>Employee List</h3>
+        <div>   
+            <Label>Total Salary.</Label>
+             <input type="text" id="totalSalary" name="name" readonly  class="inputfm">
+        </div>
+    </div>
+</div>
+    <table id="tbl" class="table" value="Add Data" onclick="addInfo()">
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+            <th>Zip</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>P.O Box</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    
+</form>
+</section>
+<script src="main.js"></script>
+</body>
+</html>
